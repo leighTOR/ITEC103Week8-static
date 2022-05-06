@@ -14,6 +14,9 @@ namespace top_ten_winforms
 {
     public partial class Form1 : MaterialForm
     {
+        string[] animelist = new string[10];
+        string[] mangalist = new string[10];
+
         public Form1()
         {
             InitializeComponent();
@@ -31,10 +34,12 @@ namespace top_ten_winforms
         {
             if (lstbAnime.Items.Count < 10)
             {
+                int i = 0;
                 if (tbAnime.Text != "")
                 {
                     lstbAnime.Items.Add(new MaterialListBoxItem(tbAnime.Text));
-                    string[] animelist = lstbAnime.Items.OfType<string>().ToArray();
+                    animelist[i] = tbAnime.Text;
+                    i++;
                 }
                 else
                     MessageBox.Show("Empty textbox.");
@@ -55,6 +60,39 @@ namespace top_ten_winforms
         private void btnAnimeClearAll_Click(object sender, EventArgs e)
         {
             lstbAnime.Clear();
+        }
+
+        private void btnMangaAdd_Click(object sender, EventArgs e)
+        {
+            if (lstbManga.Items.Count < 10)
+            {
+                int i = 0;
+                if (tbManga.Text != "")
+                {
+                    lstbManga.Items.Add(new MaterialListBoxItem(tbManga.Text));
+                    mangalist[i] = tbManga.Text;
+                    i++;
+                }
+                else
+                    MessageBox.Show("Empty textbox.");
+            }
+            else
+                MessageBox.Show("List should be 10 only.");
+        }
+
+        private void btnMangaClear_Click(object sender, EventArgs e)
+        {
+            tbManga.ResetText();
+        }
+
+        private void btnMangaRemove_Click(object sender, EventArgs e)
+        {
+            lstbManga.Items.Remove(lstbManga.SelectedItem);
+        }
+
+        private void btnClearAll_Click(object sender, EventArgs e)
+        {
+            lstbManga.Clear();
         }
     }
 }

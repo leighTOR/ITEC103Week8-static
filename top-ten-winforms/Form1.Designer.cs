@@ -29,16 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem1 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem2 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem3 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem4 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem5 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem6 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem7 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem8 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem9 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem10 = new MaterialSkin.MaterialListBoxItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tbctrlMenu = new MaterialSkin.Controls.MaterialTabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
@@ -353,6 +343,7 @@
             this.btnClearAll.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnClearAll.UseAccentColor = false;
             this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // btnMangaRemove
             // 
@@ -373,6 +364,7 @@
             this.btnMangaRemove.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnMangaRemove.UseAccentColor = false;
             this.btnMangaRemove.UseVisualStyleBackColor = true;
+            this.btnMangaRemove.Click += new System.EventHandler(this.btnMangaRemove_Click);
             // 
             // btnMangaClear
             // 
@@ -393,6 +385,7 @@
             this.btnMangaClear.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnMangaClear.UseAccentColor = false;
             this.btnMangaClear.UseVisualStyleBackColor = true;
+            this.btnMangaClear.Click += new System.EventHandler(this.btnMangaClear_Click);
             // 
             // btnMangaAdd
             // 
@@ -413,6 +406,7 @@
             this.btnMangaAdd.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnMangaAdd.UseAccentColor = false;
             this.btnMangaAdd.UseVisualStyleBackColor = true;
+            this.btnMangaAdd.Click += new System.EventHandler(this.btnMangaAdd_Click);
             // 
             // tbManga
             // 
@@ -437,46 +431,6 @@
             this.lstbManga.BorderColor = System.Drawing.Color.LightGray;
             this.lstbManga.Depth = 0;
             this.lstbManga.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            materialListBoxItem1.SecondaryText = "";
-            materialListBoxItem1.Tag = null;
-            materialListBoxItem1.Text = "One Punch Man";
-            materialListBoxItem2.SecondaryText = "";
-            materialListBoxItem2.Tag = null;
-            materialListBoxItem2.Text = "Naruto";
-            materialListBoxItem3.SecondaryText = "";
-            materialListBoxItem3.Tag = null;
-            materialListBoxItem3.Text = "ListBoxItem";
-            materialListBoxItem4.SecondaryText = "";
-            materialListBoxItem4.Tag = null;
-            materialListBoxItem4.Text = "ListBoxItem";
-            materialListBoxItem5.SecondaryText = "";
-            materialListBoxItem5.Tag = null;
-            materialListBoxItem5.Text = "ListBoxItem";
-            materialListBoxItem6.SecondaryText = "";
-            materialListBoxItem6.Tag = null;
-            materialListBoxItem6.Text = "ListBoxItem";
-            materialListBoxItem7.SecondaryText = "";
-            materialListBoxItem7.Tag = null;
-            materialListBoxItem7.Text = "ListBoxItem";
-            materialListBoxItem8.SecondaryText = "";
-            materialListBoxItem8.Tag = null;
-            materialListBoxItem8.Text = "ListBoxItem";
-            materialListBoxItem9.SecondaryText = "";
-            materialListBoxItem9.Tag = null;
-            materialListBoxItem9.Text = "ListBoxItem";
-            materialListBoxItem10.SecondaryText = "";
-            materialListBoxItem10.Tag = null;
-            materialListBoxItem10.Text = "ListBoxItem";
-            this.lstbManga.Items.Add(materialListBoxItem1);
-            this.lstbManga.Items.Add(materialListBoxItem2);
-            this.lstbManga.Items.Add(materialListBoxItem3);
-            this.lstbManga.Items.Add(materialListBoxItem4);
-            this.lstbManga.Items.Add(materialListBoxItem5);
-            this.lstbManga.Items.Add(materialListBoxItem6);
-            this.lstbManga.Items.Add(materialListBoxItem7);
-            this.lstbManga.Items.Add(materialListBoxItem8);
-            this.lstbManga.Items.Add(materialListBoxItem9);
-            this.lstbManga.Items.Add(materialListBoxItem10);
             this.lstbManga.Location = new System.Drawing.Point(39, 77);
             this.lstbManga.MouseState = MaterialSkin.MouseState.HOVER;
             this.lstbManga.Name = "lstbManga";
