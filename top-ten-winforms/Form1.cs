@@ -37,8 +37,8 @@ namespace top_ten_winforms
                 int i = 0;
                 if (tbAnime.Text != "")
                 {
-                    lstbAnime.Items.Add(new MaterialListBoxItem(tbAnime.Text));
                     animelist[i] = tbAnime.Text;
+                    lstbAnime.Items.Add(new MaterialListBoxItem(animelist[i]));
                     i++;
                 }
                 else
@@ -48,8 +48,16 @@ namespace top_ten_winforms
                 MessageBox.Show("List should be 10 only.");
         }
 
-        private void btnAnimeClear_Click(object sender, EventArgs e) => tbAnime.ResetText();
+        private void tbAnime_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnAnimeAdd_Click(this, new EventArgs());
+                tbAnime.ResetText();
+            }
+        }
 
+        private void btnAnimeClear_Click(object sender, EventArgs e) => tbAnime.ResetText();
 
         private void btnAnimeRemove_Click(object sender, EventArgs e) => lstbAnime.Items.Remove(lstbAnime.SelectedItem);
 
@@ -62,8 +70,8 @@ namespace top_ten_winforms
                 int i = 0;
                 if (tbManga.Text != "")
                 {
-                    lstbManga.Items.Add(new MaterialListBoxItem(tbManga.Text));
                     mangalist[i] = tbManga.Text;
+                    lstbManga.Items.Add(new MaterialListBoxItem(mangalist[i]));
                     i++;
                 }
                 else
@@ -71,6 +79,15 @@ namespace top_ten_winforms
             }
             else
                 MessageBox.Show("List should be 10 only.");
+        }
+
+        private void tbManga_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnMangaAdd_Click(this, new EventArgs());
+                tbManga.ResetText();
+            }
         }
 
         private void btnMangaClear_Click(object sender, EventArgs e) => tbManga.ResetText();

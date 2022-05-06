@@ -265,9 +265,10 @@
             this.tbAnime.Multiline = false;
             this.tbAnime.Name = "tbAnime";
             this.tbAnime.Size = new System.Drawing.Size(281, 50);
-            this.tbAnime.TabIndex = 1;
+            this.tbAnime.TabIndex = 0;
             this.tbAnime.Text = "";
             this.tbAnime.TrailingIcon = null;
+            this.tbAnime.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbAnime_KeyDown);
             // 
             // lstbAnime
             // 
@@ -421,9 +422,10 @@
             this.tbManga.Multiline = false;
             this.tbManga.Name = "tbManga";
             this.tbManga.Size = new System.Drawing.Size(281, 50);
-            this.tbManga.TabIndex = 5;
+            this.tbManga.TabIndex = 0;
             this.tbManga.Text = "";
             this.tbManga.TrailingIcon = null;
+            this.tbManga.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbManga_KeyDown);
             // 
             // lstbManga
             // 
