@@ -29,55 +29,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem1 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem2 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem3 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem4 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem5 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem6 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem7 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem8 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem9 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem10 = new MaterialSkin.MaterialListBoxItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            MaterialSkin.MaterialListBoxItem materialListBoxItem101 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem102 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem103 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem104 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem105 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem106 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem107 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem108 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem109 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem110 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem111 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem112 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem113 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem114 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem115 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem116 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem117 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem118 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem119 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem120 = new MaterialSkin.MaterialListBoxItem();
             this.tbctrlMenu = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabHome = new System.Windows.Forms.TabPage();
+            this.btnManga = new MaterialSkin.Controls.MaterialButton();
+            this.btnAnime = new MaterialSkin.Controls.MaterialButton();
             this.tabAnime = new System.Windows.Forms.TabPage();
-            this.imglstTabIcons = new System.Windows.Forms.ImageList(this.components);
-            this.tabManga = new System.Windows.Forms.TabPage();
-            this.lstbAnime = new MaterialSkin.Controls.MaterialListBox();
-            this.tbAnime = new MaterialSkin.Controls.MaterialTextBox();
-            this.btnAnimeAdd = new MaterialSkin.Controls.MaterialButton();
-            this.btnAnimeClear = new MaterialSkin.Controls.MaterialButton();
-            this.btnAnimeRemove = new MaterialSkin.Controls.MaterialButton();
+            this.lblAnime = new MaterialSkin.Controls.MaterialLabel();
             this.btnAnimeClearAll = new MaterialSkin.Controls.MaterialButton();
+            this.btnAnimeRemove = new MaterialSkin.Controls.MaterialButton();
+            this.btnAnimeClear = new MaterialSkin.Controls.MaterialButton();
+            this.btnAnimeAdd = new MaterialSkin.Controls.MaterialButton();
+            this.tbAnime = new MaterialSkin.Controls.MaterialTextBox();
+            this.lstbAnime = new MaterialSkin.Controls.MaterialListBox();
+            this.ptbAnime = new System.Windows.Forms.PictureBox();
+            this.tabManga = new System.Windows.Forms.TabPage();
+            this.lblManga = new MaterialSkin.Controls.MaterialLabel();
             this.btnClearAll = new MaterialSkin.Controls.MaterialButton();
             this.btnMangaRemove = new MaterialSkin.Controls.MaterialButton();
             this.btnMangaClear = new MaterialSkin.Controls.MaterialButton();
             this.btnMangaAdd = new MaterialSkin.Controls.MaterialButton();
             this.tbManga = new MaterialSkin.Controls.MaterialTextBox();
             this.lstbManga = new MaterialSkin.Controls.MaterialListBox();
-            this.tabHome = new System.Windows.Forms.TabPage();
-            this.btnManga = new MaterialSkin.Controls.MaterialButton();
-            this.btnAnime = new MaterialSkin.Controls.MaterialButton();
-            this.ptbAnime = new System.Windows.Forms.PictureBox();
             this.ptbManga = new System.Windows.Forms.PictureBox();
-            this.lblManga = new MaterialSkin.Controls.MaterialLabel();
-            this.lblAnime = new MaterialSkin.Controls.MaterialLabel();
+            this.imglstTabIcons = new System.Windows.Forms.ImageList(this.components);
             this.tbctrlMenu.SuspendLayout();
-            this.tabAnime.SuspendLayout();
-            this.tabManga.SuspendLayout();
             this.tabHome.SuspendLayout();
+            this.tabAnime.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAnime)).BeginInit();
+            this.tabManga.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbManga)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,6 +86,65 @@
             this.tbctrlMenu.SelectedIndex = 0;
             this.tbctrlMenu.Size = new System.Drawing.Size(1007, 583);
             this.tbctrlMenu.TabIndex = 1;
+            // 
+            // tabHome
+            // 
+            this.tabHome.BackgroundImage = global::top_ten_winforms.Properties.Resources.background;
+            this.tabHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabHome.Controls.Add(this.btnManga);
+            this.tabHome.Controls.Add(this.btnAnime);
+            this.tabHome.ImageKey = "home.png";
+            this.tabHome.Location = new System.Drawing.Point(4, 39);
+            this.tabHome.Name = "tabHome";
+            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
+            this.tabHome.Size = new System.Drawing.Size(999, 540);
+            this.tabHome.TabIndex = 0;
+            this.tabHome.Text = "Home";
+            this.tabHome.UseVisualStyleBackColor = true;
+            // 
+            // btnManga
+            // 
+            this.btnManga.AutoSize = false;
+            this.btnManga.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnManga.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnManga.Depth = 0;
+            this.btnManga.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManga.HighEmphasis = true;
+            this.btnManga.Icon = null;
+            this.btnManga.Location = new System.Drawing.Point(356, 351);
+            this.btnManga.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnManga.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnManga.Name = "btnManga";
+            this.btnManga.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnManga.Size = new System.Drawing.Size(240, 38);
+            this.btnManga.TabIndex = 1;
+            this.btnManga.Text = "MANGA";
+            this.btnManga.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnManga.UseAccentColor = false;
+            this.btnManga.UseVisualStyleBackColor = true;
+            this.btnManga.Click += new System.EventHandler(this.btnManga_Click);
+            // 
+            // btnAnime
+            // 
+            this.btnAnime.AutoSize = false;
+            this.btnAnime.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAnime.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnAnime.Depth = 0;
+            this.btnAnime.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnime.HighEmphasis = true;
+            this.btnAnime.Icon = null;
+            this.btnAnime.Location = new System.Drawing.Point(356, 301);
+            this.btnAnime.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAnime.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAnime.Name = "btnAnime";
+            this.btnAnime.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnAnime.Size = new System.Drawing.Size(240, 38);
+            this.btnAnime.TabIndex = 1;
+            this.btnAnime.Text = "ANIME";
+            this.btnAnime.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnAnime.UseAccentColor = false;
+            this.btnAnime.UseVisualStyleBackColor = true;
+            this.btnAnime.Click += new System.EventHandler(this.btnAnime_Click);
             // 
             // tabAnime
             // 
@@ -116,162 +165,18 @@
             this.tabAnime.Text = "Anime";
             this.tabAnime.UseVisualStyleBackColor = true;
             // 
-            // imglstTabIcons
+            // lblAnime
             // 
-            this.imglstTabIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTabIcons.ImageStream")));
-            this.imglstTabIcons.TransparentColor = System.Drawing.Color.Transparent;
-            this.imglstTabIcons.Images.SetKeyName(0, "anime.png");
-            this.imglstTabIcons.Images.SetKeyName(1, "home.png");
-            this.imglstTabIcons.Images.SetKeyName(2, "manga.png");
-            // 
-            // tabManga
-            // 
-            this.tabManga.Controls.Add(this.lblManga);
-            this.tabManga.Controls.Add(this.btnClearAll);
-            this.tabManga.Controls.Add(this.btnMangaRemove);
-            this.tabManga.Controls.Add(this.btnMangaClear);
-            this.tabManga.Controls.Add(this.btnMangaAdd);
-            this.tabManga.Controls.Add(this.tbManga);
-            this.tabManga.Controls.Add(this.lstbManga);
-            this.tabManga.Controls.Add(this.ptbManga);
-            this.tabManga.ImageKey = "manga.png";
-            this.tabManga.Location = new System.Drawing.Point(4, 39);
-            this.tabManga.Name = "tabManga";
-            this.tabManga.Size = new System.Drawing.Size(999, 540);
-            this.tabManga.TabIndex = 2;
-            this.tabManga.Text = "Manga";
-            this.tabManga.UseVisualStyleBackColor = true;
-            // 
-            // lstbAnime
-            // 
-            this.lstbAnime.BackColor = System.Drawing.Color.White;
-            this.lstbAnime.BorderColor = System.Drawing.Color.LightGray;
-            this.lstbAnime.Depth = 0;
-            this.lstbAnime.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            materialListBoxItem101.SecondaryText = "";
-            materialListBoxItem101.Tag = null;
-            materialListBoxItem101.Text = "One Punch Man";
-            materialListBoxItem102.SecondaryText = "";
-            materialListBoxItem102.Tag = null;
-            materialListBoxItem102.Text = "Naruto";
-            materialListBoxItem103.SecondaryText = "";
-            materialListBoxItem103.Tag = null;
-            materialListBoxItem103.Text = "ListBoxItem";
-            materialListBoxItem104.SecondaryText = "";
-            materialListBoxItem104.Tag = null;
-            materialListBoxItem104.Text = "ListBoxItem";
-            materialListBoxItem105.SecondaryText = "";
-            materialListBoxItem105.Tag = null;
-            materialListBoxItem105.Text = "ListBoxItem";
-            materialListBoxItem106.SecondaryText = "";
-            materialListBoxItem106.Tag = null;
-            materialListBoxItem106.Text = "ListBoxItem";
-            materialListBoxItem107.SecondaryText = "";
-            materialListBoxItem107.Tag = null;
-            materialListBoxItem107.Text = "ListBoxItem";
-            materialListBoxItem108.SecondaryText = "";
-            materialListBoxItem108.Tag = null;
-            materialListBoxItem108.Text = "ListBoxItem";
-            materialListBoxItem109.SecondaryText = "";
-            materialListBoxItem109.Tag = null;
-            materialListBoxItem109.Text = "ListBoxItem";
-            materialListBoxItem110.SecondaryText = "";
-            materialListBoxItem110.Tag = null;
-            materialListBoxItem110.Text = "ListBoxItem";
-            this.lstbAnime.Items.Add(materialListBoxItem101);
-            this.lstbAnime.Items.Add(materialListBoxItem102);
-            this.lstbAnime.Items.Add(materialListBoxItem103);
-            this.lstbAnime.Items.Add(materialListBoxItem104);
-            this.lstbAnime.Items.Add(materialListBoxItem105);
-            this.lstbAnime.Items.Add(materialListBoxItem106);
-            this.lstbAnime.Items.Add(materialListBoxItem107);
-            this.lstbAnime.Items.Add(materialListBoxItem108);
-            this.lstbAnime.Items.Add(materialListBoxItem109);
-            this.lstbAnime.Items.Add(materialListBoxItem110);
-            this.lstbAnime.Location = new System.Drawing.Point(39, 77);
-            this.lstbAnime.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lstbAnime.Name = "lstbAnime";
-            this.lstbAnime.SelectedIndex = -1;
-            this.lstbAnime.SelectedItem = null;
-            this.lstbAnime.Size = new System.Drawing.Size(579, 404);
-            this.lstbAnime.TabIndex = 0;
-            // 
-            // tbAnime
-            // 
-            this.tbAnime.AnimateReadOnly = false;
-            this.tbAnime.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbAnime.Depth = 0;
-            this.tbAnime.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tbAnime.LeadingIcon = null;
-            this.tbAnime.Location = new System.Drawing.Point(644, 77);
-            this.tbAnime.MaxLength = 50;
-            this.tbAnime.MouseState = MaterialSkin.MouseState.OUT;
-            this.tbAnime.Multiline = false;
-            this.tbAnime.Name = "tbAnime";
-            this.tbAnime.Size = new System.Drawing.Size(281, 50);
-            this.tbAnime.TabIndex = 1;
-            this.tbAnime.Text = "";
-            this.tbAnime.TrailingIcon = null;
-            // 
-            // btnAnimeAdd
-            // 
-            this.btnAnimeAdd.AutoSize = false;
-            this.btnAnimeAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAnimeAdd.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnAnimeAdd.Depth = 0;
-            this.btnAnimeAdd.HighEmphasis = true;
-            this.btnAnimeAdd.Icon = null;
-            this.btnAnimeAdd.Location = new System.Drawing.Point(644, 145);
-            this.btnAnimeAdd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAnimeAdd.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAnimeAdd.Name = "btnAnimeAdd";
-            this.btnAnimeAdd.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAnimeAdd.Size = new System.Drawing.Size(281, 36);
-            this.btnAnimeAdd.TabIndex = 2;
-            this.btnAnimeAdd.Text = "ADD";
-            this.btnAnimeAdd.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnAnimeAdd.UseAccentColor = false;
-            this.btnAnimeAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnAnimeClear
-            // 
-            this.btnAnimeClear.AutoSize = false;
-            this.btnAnimeClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAnimeClear.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnAnimeClear.Depth = 0;
-            this.btnAnimeClear.HighEmphasis = true;
-            this.btnAnimeClear.Icon = null;
-            this.btnAnimeClear.Location = new System.Drawing.Point(644, 193);
-            this.btnAnimeClear.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAnimeClear.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAnimeClear.Name = "btnAnimeClear";
-            this.btnAnimeClear.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAnimeClear.Size = new System.Drawing.Size(281, 36);
-            this.btnAnimeClear.TabIndex = 2;
-            this.btnAnimeClear.Text = "CLEAR";
-            this.btnAnimeClear.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnAnimeClear.UseAccentColor = false;
-            this.btnAnimeClear.UseVisualStyleBackColor = true;
-            // 
-            // btnAnimeRemove
-            // 
-            this.btnAnimeRemove.AutoSize = false;
-            this.btnAnimeRemove.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAnimeRemove.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnAnimeRemove.Depth = 0;
-            this.btnAnimeRemove.HighEmphasis = true;
-            this.btnAnimeRemove.Icon = null;
-            this.btnAnimeRemove.Location = new System.Drawing.Point(644, 268);
-            this.btnAnimeRemove.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAnimeRemove.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAnimeRemove.Name = "btnAnimeRemove";
-            this.btnAnimeRemove.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAnimeRemove.Size = new System.Drawing.Size(281, 36);
-            this.btnAnimeRemove.TabIndex = 2;
-            this.btnAnimeRemove.Text = "REMOVE";
-            this.btnAnimeRemove.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnAnimeRemove.UseAccentColor = false;
-            this.btnAnimeRemove.UseVisualStyleBackColor = true;
+            this.lblAnime.AutoSize = true;
+            this.lblAnime.Depth = 0;
+            this.lblAnime.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblAnime.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblAnime.Location = new System.Drawing.Point(39, 18);
+            this.lblAnime.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblAnime.Name = "lblAnime";
+            this.lblAnime.Size = new System.Drawing.Size(306, 41);
+            this.lblAnime.TabIndex = 12;
+            this.lblAnime.Text = "MY TOP TEN ANIME";
             // 
             // btnAnimeClearAll
             // 
@@ -292,6 +197,142 @@
             this.btnAnimeClearAll.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnAnimeClearAll.UseAccentColor = false;
             this.btnAnimeClearAll.UseVisualStyleBackColor = true;
+            this.btnAnimeClearAll.Click += new System.EventHandler(this.btnAnimeClearAll_Click);
+            // 
+            // btnAnimeRemove
+            // 
+            this.btnAnimeRemove.AutoSize = false;
+            this.btnAnimeRemove.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAnimeRemove.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnAnimeRemove.Depth = 0;
+            this.btnAnimeRemove.HighEmphasis = true;
+            this.btnAnimeRemove.Icon = null;
+            this.btnAnimeRemove.Location = new System.Drawing.Point(644, 268);
+            this.btnAnimeRemove.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAnimeRemove.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAnimeRemove.Name = "btnAnimeRemove";
+            this.btnAnimeRemove.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnAnimeRemove.Size = new System.Drawing.Size(281, 36);
+            this.btnAnimeRemove.TabIndex = 2;
+            this.btnAnimeRemove.Text = "REMOVE";
+            this.btnAnimeRemove.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnAnimeRemove.UseAccentColor = false;
+            this.btnAnimeRemove.UseVisualStyleBackColor = true;
+            this.btnAnimeRemove.Click += new System.EventHandler(this.btnAnimeRemove_Click);
+            // 
+            // btnAnimeClear
+            // 
+            this.btnAnimeClear.AutoSize = false;
+            this.btnAnimeClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAnimeClear.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnAnimeClear.Depth = 0;
+            this.btnAnimeClear.HighEmphasis = true;
+            this.btnAnimeClear.Icon = null;
+            this.btnAnimeClear.Location = new System.Drawing.Point(644, 193);
+            this.btnAnimeClear.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAnimeClear.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAnimeClear.Name = "btnAnimeClear";
+            this.btnAnimeClear.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnAnimeClear.Size = new System.Drawing.Size(281, 36);
+            this.btnAnimeClear.TabIndex = 2;
+            this.btnAnimeClear.Text = "CLEAR";
+            this.btnAnimeClear.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnAnimeClear.UseAccentColor = false;
+            this.btnAnimeClear.UseVisualStyleBackColor = true;
+            this.btnAnimeClear.Click += new System.EventHandler(this.btnAnimeClear_Click);
+            // 
+            // btnAnimeAdd
+            // 
+            this.btnAnimeAdd.AutoSize = false;
+            this.btnAnimeAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAnimeAdd.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnAnimeAdd.Depth = 0;
+            this.btnAnimeAdd.HighEmphasis = true;
+            this.btnAnimeAdd.Icon = null;
+            this.btnAnimeAdd.Location = new System.Drawing.Point(644, 145);
+            this.btnAnimeAdd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAnimeAdd.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAnimeAdd.Name = "btnAnimeAdd";
+            this.btnAnimeAdd.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnAnimeAdd.Size = new System.Drawing.Size(281, 36);
+            this.btnAnimeAdd.TabIndex = 2;
+            this.btnAnimeAdd.Text = "ADD";
+            this.btnAnimeAdd.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnAnimeAdd.UseAccentColor = false;
+            this.btnAnimeAdd.UseVisualStyleBackColor = true;
+            this.btnAnimeAdd.Click += new System.EventHandler(this.btnAnimeAdd_Click);
+            // 
+            // tbAnime
+            // 
+            this.tbAnime.AnimateReadOnly = false;
+            this.tbAnime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbAnime.Depth = 0;
+            this.tbAnime.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tbAnime.LeadingIcon = null;
+            this.tbAnime.Location = new System.Drawing.Point(644, 77);
+            this.tbAnime.MaxLength = 50;
+            this.tbAnime.MouseState = MaterialSkin.MouseState.OUT;
+            this.tbAnime.Multiline = false;
+            this.tbAnime.Name = "tbAnime";
+            this.tbAnime.Size = new System.Drawing.Size(281, 50);
+            this.tbAnime.TabIndex = 1;
+            this.tbAnime.Text = "";
+            this.tbAnime.TrailingIcon = null;
+            // 
+            // lstbAnime
+            // 
+            this.lstbAnime.BackColor = System.Drawing.Color.White;
+            this.lstbAnime.BorderColor = System.Drawing.Color.LightGray;
+            this.lstbAnime.Depth = 0;
+            this.lstbAnime.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lstbAnime.Location = new System.Drawing.Point(39, 77);
+            this.lstbAnime.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lstbAnime.Name = "lstbAnime";
+            this.lstbAnime.SelectedIndex = -1;
+            this.lstbAnime.SelectedItem = null;
+            this.lstbAnime.Size = new System.Drawing.Size(579, 404);
+            this.lstbAnime.TabIndex = 0;
+            // 
+            // ptbAnime
+            // 
+            this.ptbAnime.Image = global::top_ten_winforms.Properties.Resources.yui;
+            this.ptbAnime.Location = new System.Drawing.Point(605, 379);
+            this.ptbAnime.Name = "ptbAnime";
+            this.ptbAnime.Size = new System.Drawing.Size(364, 206);
+            this.ptbAnime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbAnime.TabIndex = 3;
+            this.ptbAnime.TabStop = false;
+            // 
+            // tabManga
+            // 
+            this.tabManga.Controls.Add(this.lblManga);
+            this.tabManga.Controls.Add(this.btnClearAll);
+            this.tabManga.Controls.Add(this.btnMangaRemove);
+            this.tabManga.Controls.Add(this.btnMangaClear);
+            this.tabManga.Controls.Add(this.btnMangaAdd);
+            this.tabManga.Controls.Add(this.tbManga);
+            this.tabManga.Controls.Add(this.lstbManga);
+            this.tabManga.Controls.Add(this.ptbManga);
+            this.tabManga.ImageKey = "manga.png";
+            this.tabManga.Location = new System.Drawing.Point(4, 39);
+            this.tabManga.Name = "tabManga";
+            this.tabManga.Size = new System.Drawing.Size(999, 540);
+            this.tabManga.TabIndex = 2;
+            this.tabManga.Text = "Manga";
+            this.tabManga.UseVisualStyleBackColor = true;
+            // 
+            // lblManga
+            // 
+            this.lblManga.AutoSize = true;
+            this.lblManga.Depth = 0;
+            this.lblManga.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblManga.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblManga.Location = new System.Drawing.Point(39, 18);
+            this.lblManga.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblManga.Name = "lblManga";
+            this.lblManga.Size = new System.Drawing.Size(323, 41);
+            this.lblManga.TabIndex = 11;
+            this.lblManga.Text = "MY TOP TEN MANGA";
             // 
             // btnClearAll
             // 
@@ -396,46 +437,46 @@
             this.lstbManga.BorderColor = System.Drawing.Color.LightGray;
             this.lstbManga.Depth = 0;
             this.lstbManga.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            materialListBoxItem111.SecondaryText = "";
-            materialListBoxItem111.Tag = null;
-            materialListBoxItem111.Text = "One Punch Man";
-            materialListBoxItem112.SecondaryText = "";
-            materialListBoxItem112.Tag = null;
-            materialListBoxItem112.Text = "Naruto";
-            materialListBoxItem113.SecondaryText = "";
-            materialListBoxItem113.Tag = null;
-            materialListBoxItem113.Text = "ListBoxItem";
-            materialListBoxItem114.SecondaryText = "";
-            materialListBoxItem114.Tag = null;
-            materialListBoxItem114.Text = "ListBoxItem";
-            materialListBoxItem115.SecondaryText = "";
-            materialListBoxItem115.Tag = null;
-            materialListBoxItem115.Text = "ListBoxItem";
-            materialListBoxItem116.SecondaryText = "";
-            materialListBoxItem116.Tag = null;
-            materialListBoxItem116.Text = "ListBoxItem";
-            materialListBoxItem117.SecondaryText = "";
-            materialListBoxItem117.Tag = null;
-            materialListBoxItem117.Text = "ListBoxItem";
-            materialListBoxItem118.SecondaryText = "";
-            materialListBoxItem118.Tag = null;
-            materialListBoxItem118.Text = "ListBoxItem";
-            materialListBoxItem119.SecondaryText = "";
-            materialListBoxItem119.Tag = null;
-            materialListBoxItem119.Text = "ListBoxItem";
-            materialListBoxItem120.SecondaryText = "";
-            materialListBoxItem120.Tag = null;
-            materialListBoxItem120.Text = "ListBoxItem";
-            this.lstbManga.Items.Add(materialListBoxItem111);
-            this.lstbManga.Items.Add(materialListBoxItem112);
-            this.lstbManga.Items.Add(materialListBoxItem113);
-            this.lstbManga.Items.Add(materialListBoxItem114);
-            this.lstbManga.Items.Add(materialListBoxItem115);
-            this.lstbManga.Items.Add(materialListBoxItem116);
-            this.lstbManga.Items.Add(materialListBoxItem117);
-            this.lstbManga.Items.Add(materialListBoxItem118);
-            this.lstbManga.Items.Add(materialListBoxItem119);
-            this.lstbManga.Items.Add(materialListBoxItem120);
+            materialListBoxItem1.SecondaryText = "";
+            materialListBoxItem1.Tag = null;
+            materialListBoxItem1.Text = "One Punch Man";
+            materialListBoxItem2.SecondaryText = "";
+            materialListBoxItem2.Tag = null;
+            materialListBoxItem2.Text = "Naruto";
+            materialListBoxItem3.SecondaryText = "";
+            materialListBoxItem3.Tag = null;
+            materialListBoxItem3.Text = "ListBoxItem";
+            materialListBoxItem4.SecondaryText = "";
+            materialListBoxItem4.Tag = null;
+            materialListBoxItem4.Text = "ListBoxItem";
+            materialListBoxItem5.SecondaryText = "";
+            materialListBoxItem5.Tag = null;
+            materialListBoxItem5.Text = "ListBoxItem";
+            materialListBoxItem6.SecondaryText = "";
+            materialListBoxItem6.Tag = null;
+            materialListBoxItem6.Text = "ListBoxItem";
+            materialListBoxItem7.SecondaryText = "";
+            materialListBoxItem7.Tag = null;
+            materialListBoxItem7.Text = "ListBoxItem";
+            materialListBoxItem8.SecondaryText = "";
+            materialListBoxItem8.Tag = null;
+            materialListBoxItem8.Text = "ListBoxItem";
+            materialListBoxItem9.SecondaryText = "";
+            materialListBoxItem9.Tag = null;
+            materialListBoxItem9.Text = "ListBoxItem";
+            materialListBoxItem10.SecondaryText = "";
+            materialListBoxItem10.Tag = null;
+            materialListBoxItem10.Text = "ListBoxItem";
+            this.lstbManga.Items.Add(materialListBoxItem1);
+            this.lstbManga.Items.Add(materialListBoxItem2);
+            this.lstbManga.Items.Add(materialListBoxItem3);
+            this.lstbManga.Items.Add(materialListBoxItem4);
+            this.lstbManga.Items.Add(materialListBoxItem5);
+            this.lstbManga.Items.Add(materialListBoxItem6);
+            this.lstbManga.Items.Add(materialListBoxItem7);
+            this.lstbManga.Items.Add(materialListBoxItem8);
+            this.lstbManga.Items.Add(materialListBoxItem9);
+            this.lstbManga.Items.Add(materialListBoxItem10);
             this.lstbManga.Location = new System.Drawing.Point(39, 77);
             this.lstbManga.MouseState = MaterialSkin.MouseState.HOVER;
             this.lstbManga.Name = "lstbManga";
@@ -443,75 +484,6 @@
             this.lstbManga.SelectedItem = null;
             this.lstbManga.Size = new System.Drawing.Size(579, 404);
             this.lstbManga.TabIndex = 4;
-            // 
-            // tabHome
-            // 
-            this.tabHome.BackgroundImage = global::top_ten_winforms.Properties.Resources.background;
-            this.tabHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabHome.Controls.Add(this.btnManga);
-            this.tabHome.Controls.Add(this.btnAnime);
-            this.tabHome.ImageKey = "home.png";
-            this.tabHome.Location = new System.Drawing.Point(4, 39);
-            this.tabHome.Name = "tabHome";
-            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(999, 540);
-            this.tabHome.TabIndex = 0;
-            this.tabHome.Text = "Home";
-            this.tabHome.UseVisualStyleBackColor = true;
-            // 
-            // btnManga
-            // 
-            this.btnManga.AutoSize = false;
-            this.btnManga.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnManga.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnManga.Depth = 0;
-            this.btnManga.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManga.HighEmphasis = true;
-            this.btnManga.Icon = null;
-            this.btnManga.Location = new System.Drawing.Point(356, 351);
-            this.btnManga.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnManga.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnManga.Name = "btnManga";
-            this.btnManga.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnManga.Size = new System.Drawing.Size(240, 38);
-            this.btnManga.TabIndex = 1;
-            this.btnManga.Text = "MANGA";
-            this.btnManga.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnManga.UseAccentColor = false;
-            this.btnManga.UseVisualStyleBackColor = true;
-            this.btnManga.Click += new System.EventHandler(this.btnManga_Click);
-            // 
-            // btnAnime
-            // 
-            this.btnAnime.AutoSize = false;
-            this.btnAnime.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAnime.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnAnime.Depth = 0;
-            this.btnAnime.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnime.HighEmphasis = true;
-            this.btnAnime.Icon = null;
-            this.btnAnime.Location = new System.Drawing.Point(356, 301);
-            this.btnAnime.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAnime.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAnime.Name = "btnAnime";
-            this.btnAnime.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAnime.Size = new System.Drawing.Size(240, 38);
-            this.btnAnime.TabIndex = 1;
-            this.btnAnime.Text = "ANIME";
-            this.btnAnime.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnAnime.UseAccentColor = false;
-            this.btnAnime.UseVisualStyleBackColor = true;
-            this.btnAnime.Click += new System.EventHandler(this.btnAnime_Click);
-            // 
-            // ptbAnime
-            // 
-            this.ptbAnime.Image = global::top_ten_winforms.Properties.Resources.yui;
-            this.ptbAnime.Location = new System.Drawing.Point(605, 379);
-            this.ptbAnime.Name = "ptbAnime";
-            this.ptbAnime.Size = new System.Drawing.Size(364, 206);
-            this.ptbAnime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbAnime.TabIndex = 3;
-            this.ptbAnime.TabStop = false;
             // 
             // ptbManga
             // 
@@ -523,31 +495,13 @@
             this.ptbManga.TabIndex = 10;
             this.ptbManga.TabStop = false;
             // 
-            // lblManga
+            // imglstTabIcons
             // 
-            this.lblManga.AutoSize = true;
-            this.lblManga.Depth = 0;
-            this.lblManga.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblManga.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.lblManga.Location = new System.Drawing.Point(39, 18);
-            this.lblManga.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblManga.Name = "lblManga";
-            this.lblManga.Size = new System.Drawing.Size(323, 41);
-            this.lblManga.TabIndex = 11;
-            this.lblManga.Text = "MY TOP TEN MANGA";
-            // 
-            // lblAnime
-            // 
-            this.lblAnime.AutoSize = true;
-            this.lblAnime.Depth = 0;
-            this.lblAnime.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblAnime.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.lblAnime.Location = new System.Drawing.Point(39, 18);
-            this.lblAnime.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblAnime.Name = "lblAnime";
-            this.lblAnime.Size = new System.Drawing.Size(306, 41);
-            this.lblAnime.TabIndex = 12;
-            this.lblAnime.Text = "MY TOP TEN ANIME";
+            this.imglstTabIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTabIcons.ImageStream")));
+            this.imglstTabIcons.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstTabIcons.Images.SetKeyName(0, "anime.png");
+            this.imglstTabIcons.Images.SetKeyName(1, "home.png");
+            this.imglstTabIcons.Images.SetKeyName(2, "manga.png");
             // 
             // Form1
             // 
@@ -557,6 +511,7 @@
             this.Controls.Add(this.tbctrlMenu);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.tbctrlMenu;
+            this.DrawerWidth = 150;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(0, 64, 3, 3);
@@ -564,12 +519,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Anime & Manga: My Top Ten";
             this.tbctrlMenu.ResumeLayout(false);
+            this.tabHome.ResumeLayout(false);
             this.tabAnime.ResumeLayout(false);
             this.tabAnime.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAnime)).EndInit();
             this.tabManga.ResumeLayout(false);
             this.tabManga.PerformLayout();
-            this.tabHome.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAnime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbManga)).EndInit();
             this.ResumeLayout(false);
 
