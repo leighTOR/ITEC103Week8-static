@@ -258,6 +258,7 @@
             this.tbAnime.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbAnime.Depth = 0;
             this.tbAnime.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tbAnime.Hint = "Anime Title";
             this.tbAnime.LeadingIcon = null;
             this.tbAnime.Location = new System.Drawing.Point(644, 77);
             this.tbAnime.MaxLength = 50;
@@ -265,7 +266,7 @@
             this.tbAnime.Multiline = false;
             this.tbAnime.Name = "tbAnime";
             this.tbAnime.Size = new System.Drawing.Size(281, 50);
-            this.tbAnime.TabIndex = 0;
+            this.tbAnime.TabIndex = 1;
             this.tbAnime.Text = "";
             this.tbAnime.TrailingIcon = null;
             this.tbAnime.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbAnime_KeyDown);
@@ -415,6 +416,7 @@
             this.tbManga.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbManga.Depth = 0;
             this.tbManga.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tbManga.Hint = "Manga Title";
             this.tbManga.LeadingIcon = null;
             this.tbManga.Location = new System.Drawing.Point(644, 77);
             this.tbManga.MaxLength = 50;
@@ -422,7 +424,7 @@
             this.tbManga.Multiline = false;
             this.tbManga.Name = "tbManga";
             this.tbManga.Size = new System.Drawing.Size(281, 50);
-            this.tbManga.TabIndex = 0;
+            this.tbManga.TabIndex = 5;
             this.tbManga.Text = "";
             this.tbManga.TrailingIcon = null;
             this.tbManga.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbManga_KeyDown);
