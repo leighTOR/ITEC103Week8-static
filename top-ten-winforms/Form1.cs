@@ -51,16 +51,9 @@ namespace top_ten_winforms
         private void btnAnimeClear_Click(object sender, EventArgs e) => tbAnime.ResetText();
 
 
-        private void btnAnimeRemove_Click(object sender, EventArgs e)
-        {
-            lstbAnime.Items.Remove(lstbAnime.SelectedItem);
+        private void btnAnimeRemove_Click(object sender, EventArgs e) => lstbAnime.Items.Remove(lstbAnime.SelectedItem);
 
-        }
-
-        private void btnAnimeClearAll_Click(object sender, EventArgs e)
-        {
-            lstbAnime.Clear();
-        }
+        private void btnAnimeClearAll_Click(object sender, EventArgs e) => lstbAnime.Clear();
 
         private void btnMangaAdd_Click(object sender, EventArgs e)
         {
@@ -80,19 +73,10 @@ namespace top_ten_winforms
                 MessageBox.Show("List should be 10 only.");
         }
 
-        private void btnMangaClear_Click(object sender, EventArgs e)
-        {
-            tbManga.ResetText();
-        }
+        private void btnMangaClear_Click(object sender, EventArgs e) => tbManga.ResetText();
 
-        private void btnMangaRemove_Click(object sender, EventArgs e)
-        {
-            lstbManga.Items.Remove(lstbManga.SelectedItem);
-        }
+        private void btnMangaRemove_Click(object sender, EventArgs e) => lstbManga.Items.Remove(lstbManga.SelectedItem);
 
-        private void btnClearAll_Click(object sender, EventArgs e)
-        {
-            lstbManga.Clear();
-        }
+        private void btnClearAll_Click(object sender, EventArgs e) => lstbManga.Clear();
     }
 }
