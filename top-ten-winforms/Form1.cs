@@ -54,6 +54,8 @@ namespace top_ten_winforms
             {
                 btnAnimeAdd_Click(this, new EventArgs());
                 tbAnime.ResetText();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
             }
         }
 
@@ -87,6 +89,8 @@ namespace top_ten_winforms
             {
                 btnMangaAdd_Click(this, new EventArgs());
                 tbManga.ResetText();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
             }
         }
 
