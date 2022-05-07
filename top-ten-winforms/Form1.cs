@@ -5,11 +5,16 @@ using MaterialSkin.Controls;
 
 namespace top_ten_winforms
 {
+    /// <summary>
+    /// A desktop application that lists your top ten favourite anime and manga.
+    /// This project implemented a static data structure which is array to demonstrate how this static works.
+    /// </summary>
     public partial class Form1 : MaterialForm
     {
         string[] animelist = new string[10];
         string[] mangalist = new string[10];
 
+        #region Constructors
         public Form1()
         {
             InitializeComponent();
@@ -18,23 +23,27 @@ namespace top_ten_winforms
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue900, Primary.Blue800, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
         }
+        #endregion
 
+        #region Home tab
         /// <summary>
-        /// Clicking the Anime button from home tab.
+        /// Going to the anime tab.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnAnime_Click(object sender, EventArgs e) => tbctrlMenu.SelectedTab = tabAnime;
 
         /// <summary>
-        /// Clicking the Manga button from home tab.
+        /// Going to the manga tab.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnManga_Click(object sender, EventArgs e) => tbctrlMenu.SelectedTab = tabManga;
+        #endregion;
 
+        #region Anime tab
         /// <summary>
-        /// Clicking the add button from anime tab.
+        /// Adding the anime titles from the textbox to the listbox.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -73,28 +82,30 @@ namespace top_ten_winforms
         }
 
         /// <summary>
-        /// Clicking the clear button from anime tab.
+        /// Clearing the Anime title in texbox.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnAnimeClear_Click(object sender, EventArgs e) => tbAnime.ResetText();
 
         /// <summary>
-        /// Clicking the remove button from anime tab.
+        /// Removing an anime title from the listbox.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnAnimeRemove_Click(object sender, EventArgs e) => lstbAnime.Items.Remove(lstbAnime.SelectedItem);
 
         /// <summary>
-        /// Clicking the clear all button from anime tab.
+        /// Clearing all the titles from the listbox.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnAnimeClearAll_Click(object sender, EventArgs e) => lstbAnime.Clear();
+        #endregion
 
+        #region Manga tab
         /// <summary>
-        /// Clicking the add button from manga button.
+        /// Adding the manga title from textbox to the listbox.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -133,24 +144,25 @@ namespace top_ten_winforms
         }
 
         /// <summary>
-        /// Clicking the clear button from manga tab.
+        /// Clearing the manga title textbox.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnMangaClear_Click(object sender, EventArgs e) => tbManga.ResetText();
 
         /// <summary>
-        /// Clicking the remove button from manga tab.
+        /// Removing a manga title from the listbox.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnMangaRemove_Click(object sender, EventArgs e) => lstbManga.Items.Remove(lstbManga.SelectedItem);
 
         /// <summary>
-        /// Clicking the clear all button from manga tab.
+        /// Clearing all the titles from the listbox.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnClearAll_Click(object sender, EventArgs e) => lstbManga.Clear();
+        #endregion
     }
 }
