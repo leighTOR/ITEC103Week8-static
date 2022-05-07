@@ -3,11 +3,11 @@
   <h1 align="center">Anime & Manga: My Top Ten</h1>
 
   <p align="center">
-    ITEC 103 - Intermediate Programming with C# Subject Performance Task
+    ITEC 103 - Intermediate Programming with C# Subject Week 8 Performance Task
     <br />
-    <a href="https://github.com/leighTOR/ITEC103Week8-static/issuess">Report Bug</a>
+    <a href="https://github.com/leighTOR/ITEC103Week8-static/issues">Report Bug</a>
     ·
-    <a href="https://github.com/leighTOR/ITEC103Week8-static/issuess">Request Feature</a>
+    <a href="https://github.com/leighTOR/ITEC103Week8-static/issues">Request Feature</a>
   </p>
 </div>
 
@@ -34,7 +34,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A desktop application that list your top ten favourite anime and manga. This project implement a static data structure which is array to demonstrate how static works. This is just a simple project using C# Windows Forms Application. This is just for educational purposes only.
+A desktop application that lists your top ten favourite anime and manga. This project implemented a static data structure which is array to demonstrate how this static works. This is just a simple project using C# Windows Forms Application. This is just for educational purposes only.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
